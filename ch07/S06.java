@@ -9,7 +9,7 @@ public class S06 {
     public static void main(String[] args) {
         Sub01 sub01 = new Sub01();
 
-        System.out.println(sub01.data);
+        System.out.println(sub01.getData());
     }
     
 }
