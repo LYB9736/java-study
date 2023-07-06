@@ -1,3 +1,5 @@
+package ch00;
+
 public class Study02 {
     public static void main(String[] args) {
         int num = 1;
