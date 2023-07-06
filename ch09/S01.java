@@ -9,9 +9,11 @@ public class S01 {
 
         System.out.println("str.length() : " + str.length());
         System.out.println("str.charAt(1) : " + str.charAt(1));
+        // (시작위치)
         System.out.println("str.substring(6) : " + str.substring(6));
         // 주민등록번호 등을 잘라낼 때
         // 12345678 → "1" + "*******"
+        // (시작위치, 끝위치)
         System.out.println("str.substring(6, 11) : " + str.substring(6, 11));
         // 아이디 happy를 CapsLock 실수로 눌러서 HAPPY로 했을 때에도
         // 비교시 toLowerCase등을 이용해서 처리할 수 있다.
@@ -73,6 +75,26 @@ public class S01 {
         System.out.println("bird1.equals(bird2) : " + bird1.equals(bird2));
         System.out.println("bird4.equals(bird5) : " + bird4.equals(bird5));
         
+        // 문자열과 문자배열
+        
+        String korean = "가나다라";
+        
+        String[] split = korean.split("");
+
+        // 문자열의 문자(char)를 반복할 때
+        for(int i = 0; i<korean.length(); i++){
+            System.out.println(korean.charAt(i));
+        }
+
+        // 문자열을 문자배열로 바꿔서 반복할 때
+        // 각 문자에 문자열 메서드를 사용하고 싶을 때
+        for (int i = 0; i < split.length; i++) {
+            System.out.println(split[i].repeat(2));
+            
+        }
+
+        System.out.println("String.join(\"\", split) : " + String.join("", split));
+        System.out.println("String.join(\"\", split) : " + String.join("a", split));
     }
     
 }
